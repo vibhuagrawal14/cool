@@ -3,15 +3,30 @@ title: "Page not found"
 description: "Page not found"
 permalink: /404.html
 sitemap: false
-layout: default
 ---
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+		<a href="//www.vibhuagrawal.com" style="float:right">home</a>
+        <div class="notfound-wrapper">
+		  <div class="notfound-content">
+		    <p style="transform: translateY(100%)">
+		      <font size=40>404</font>
+		      <br>
+		      Looks like you got lost.
+		      <br>
+		      Let's get you back to the <a href="{{ '/' | relative_url }}">blog</a>!
+		    </p>
+		  </div>
+		</div>
+      </div>
+    </div>
+  </main>
+  {% include javascripts.html %}
+</body>
+</html>
 
-<div class="notfound-wrapper">
-  <div class="notfound-content">
-    <p>
-      Looks like you got lost.
-      <br>
-      Let's get you back to the <a href="{{ '/' | relative_url }}">homepage</a>!
-    </p>
-  </div>
-</div>
