@@ -1,16 +1,18 @@
-<a href="//www.vibhuagrawal.com" style="float:right">home</a>
+<a href="{{ '/' | relative_url }}" style="float:left;margin:0;">cool</a>
+<a href="//www.vibhuagrawal.com" style="float:right; margin:0;">home</a>
+<ul class="header-links" style="margin:0;">
+  {% if site.theme_toggle == true %}
+    <li>
+      <a onclick="toggle()" title="Toggle Theme">
+        {% include svg-icon.html icon="theme" %}
+      </a>
+    </li>
+  {% endif %}
+</ul>
 
-<nav class="header-nav {% if site.scrollappear_enabled %}scrollappear{% endif %}">
+
+<nav class="header-nav {% if site.scrollappear_enabled %}scrollappear{% endif %}" style="text-align: center;">
   <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
-  <ul class="header-links">
-    {% if site.theme_toggle == true %}
-      <li>
-        <a onclick="toggle()" title="Toggle Theme">
-          {% include svg-icon.html icon="theme" %}
-        </a>
-      </li>
-    {% endif %}
-  </ul>
 </nav>
 
 {% if site.tag_nav_enabled %}

@@ -5,7 +5,8 @@ description: "a summerless year, leftovers, trust, etc."
 tags: [history, philosophy]
 ---
 
-{% include image.html path="documentation/weymouth_bay.jpeg" path-detail="documentation/weymouth_bay.jpeg" alt="Weymouth Bay, 1816 by John Constable" caption="Weymouth Bay, 1816 by John Constable" %}
+{% include image.html path="documentation/weymouth_bay.jpeg" path-detail="documentation/weymouth_bay.jpeg" alt="Weymouth Bay, 1816 by John Constable" caption="Weymouth Bay, 1816 by John Constable"%}
+<p style="margin:0; text-align: center;margin: 0;top: -25px;position: relative;"><em>Weymouth Bay, 1816 by John Constable</em></p>
 
 ### **Year Without a Summer**
 
