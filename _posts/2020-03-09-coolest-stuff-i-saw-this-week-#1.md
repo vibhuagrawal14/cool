@@ -35,7 +35,7 @@ This brilliant [game by Nicky Case](https://ncase.me/trust/) explains the Prison
 ### **A cool artist I found this week:** [**Daniela Andrade**](https://open.spotify.com/artist/0WfaItAbs4vlgIA1cuqGtJ)
 
 <div class="embed-responsive embed-responsive-16by9">
-<iframe src="https://www.youtube.com/embed/DWC4bJQy0mc?modestbranding=1&autohide=1&showinfo=0&controls=0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/DWC4bJQy0mc?modestbranding=1&autohide=1&showinfo=0&controls=1" allowfullscreen></iframe>
 </div>
 
 {% include spotifyAlbum.html id="03qMGEbUXMypieuFY8xOsn" %}
