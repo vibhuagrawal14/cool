@@ -507,7 +507,7 @@ blockquote {
   border-left: 3px solid #615b5b; }
 
 hr {
-  margin: 0;
+  margin-bottom: 30px;
   border-top: 0;
   border-right: 0;
   border-bottom: 1px solid #ebeaea;
@@ -786,10 +786,12 @@ img {
   .article-content p,
   .article-content ul,
   .article-content ol,
-  .article-content img,
   .article-content blockquote {
     display: block;
     margin-bottom: 30px; }
+  .article-content img {
+    display: block;
+    margin-bottom: 10px; }
   .article-content h2,
   .article-content h3,
   .article-content h4 {
@@ -837,6 +839,34 @@ img {
   .article-list-tags {
     display: block;
     margin-top: -7px; } }
+.embed-spotify-song {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  max-width: 100%; }
+
+.embed-spotify-song iframe, .embed-spotify object, .embed-spotify embed {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
+  max-width: 100%; }
+
+.embed-spotify-list {
+  width: 100%;
+  height: 310px;
+  position: relative;
+  max-width: 100%; }
+
+.embed-spotify-list iframe, .embed-spotify object, .embed-spotify embed {
+  position: absolute;
+  width: 100%;
+  height: 310px;
+  top: 0;
+  left: 0;
+  max-width: 100%; }
+
 .embed-responsive {
   position: relative;
   display: block;
