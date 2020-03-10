@@ -808,7 +808,8 @@ img {
     margin-bottom: 0;
     vertical-align: middle; }
   .article-content a {
-    color: #ee4540; }
+    color: #ee4540;
+    text-decoration: none; }
 
 .article-comments {
   display: block;
