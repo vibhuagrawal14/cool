@@ -1,35 +1,76 @@
 <!doctype html>
 <html lang="en">
-{% include head.html %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>coolest stuff i saw this week</title>
+  <meta name="description" content="Subscribe">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="SUBSCRIBE">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/cool/subscribe.html">
+  <meta property="og:description" content="Subscribe">
+  <meta property="og:site_name" content="coolest stuff i saw this week">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://localhost:4000/cool/subscribe.html">
+  <meta name="twitter:title" content="SUBSCRIBE">
+  <meta name="twitter:description" content="Subscribe">
+
+  
+    <meta property="og:image" content="http://localhost:4000/cool/assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+    <meta name="twitter:image" content="http://localhost:4000/cool/assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+  
+
+  <link href="http://localhost:4000/cool/feed.xml" type="application/rss+xml" rel="alternate" title="coolest stuff i saw this week Last 10 blog posts" />
+
+  
+
+  
+
+    
+      <link rel="icon" type="image/x-icon" href="/cool/assets/favicon-light-702ab51dfa9cf5aef21e1d38a4abd17061bfe9e09a58740d50b3d3fa03422a31.ico">
+      <link rel="apple-touch-icon" href="/cool/assets/apple-touch-icon-light-83553fcd9ad439809702917492f2922a943169b45ba6eb8e1b6727dd5d936509.png">
+      <link rel="stylesheet" type="text/css" title="light" id="light" href="/cool/assets/light-1b9a6b3f880a0534530860a6996f56f0b2f6fa611230cfe11be735f3e0c1cfd0.css">
+      <link rel="stylesheet" type="text/css" title="dark" id="dark" href="/cool/assets/dark-ed001fd48b4a5a48296f03a39cc1d7fbf57df6590cc0a9855e15a55d9497abb2.css" disabled="true">
+    
+
+  
+
+</head>
+
 <body>
   <main>
     <div class="grid grid-centered">
       <div class="grid-cell">
-        {% include navigation2.html %}
-        <article class="article {% if site.scrollappear_enabled %}scrollappear{% endif %}">
-          <header class="article-header" style="text-align: center;">
-            <!-- <h1>{{ page.title }}</h1> -->
-            <p>{{ page.description }}</p>
-            {% include article/info-footer2.html post=page %}
-          </header>
+      	<a href="/cool/" style="float:left;margin:0;">cool</a>
+<a href="//www.vibhuagrawal.com" style="float:right; margin:0;">home</a>
+<ul class="header-links" style="margin:0;">
+  
+    <li>
+      <a onclick="toggle()" title="Toggle Theme">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-theme">
+  <use href="/cool/assets/theme-66869e0bf8dab34bae1c86bda400327b772e0be69e8dc28d3ede896e771320ed.svg#icon-theme" xlink:href="/cool/assets/theme-66869e0bf8dab34bae1c86bda400327b772e0be69e8dc28d3ede896e771320ed.svg#icon-theme"></use>
+</svg>
 
-          <div class="article-content">
-            {{ content }}
-          </div>
-          <div class="article-share" style="text-align: center;">
-            {% assign page_title = page.title | cgi_escape | truncate: 110 %}
-            {% capture twitter-share-text %}{{ page_title }} - {{ page.url | absolute_url }}{% if site.social.twitter %} by @{{ site.social.twitter }}{% endif %}{% endcapture %}
-            <a href="https://twitter.com/home?status={{ twitter-share-text | uri_escape }}" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
-              <svg viewBox="0 0 512 512"><path d="M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6 -18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6 0.8 15 2.5 22.1 -80.5-4-151.9-42.6-199.6-101.3 -8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7C67 210.7 52 206.3 39 199c0 0.4 0 0.8 0 1.2 0 47 33.4 86.1 77.7 95 -8.1 2.2-16.7 3.4-25.5 3.4 -6.2 0-12.3-0.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3 -33.1 26-74.9 41.5-120.3 41.5 -7.8 0-15.5-0.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-0.1-8.4-0.3-12.5C462.6 146 479 129 492 109.5z"/></svg>
-            </a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
-              <svg viewBox="0 0 512 512"><path d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64H288z"/></svg>
-            </a>
-          </div>
-          <div class="toggle" style="display: none;text-align: center;adding-top:20px"> Thank you for subscribing! </div>
+      </a>
+    </li>
+  
+</ul>
 
-          <div class="toggle" style="text-align: center;">
-        
+<nav class="header-nav scrollappear" style="text-align: center;">
+  <a class="header-logo" title="coolest stuff i saw this week">SUBSCRIBE</a>
+</nav>
+
+
+
+<!-- 		<a href="//www.vibhuagrawal.com" style="float:right">home</a> -->
+        <div class="notfound-wrapper" >
+        	<div class="toggle" style="display: none"> Thank you for subscribing! </div>
+        	<div class="toggle">
+<div class="notfound-content">
+		    
                     <style type="text/css">
     .subscription-form input {
         display: inline-block;
@@ -115,7 +156,7 @@
     }
 
     .subscription-form button {
-        margin-top: 5px; 
+        margin-top: 20px; 
         border-radius: 4px; 
         padding: 10px; 
         text-align: center;
@@ -162,8 +203,8 @@
         <div class="subscription-form">
             <h4 class="dont-break-out"></h4>
                                         <div class="subscription-form-fields">
-                    <div>
-                        Hey! If you would like to be notified of future cool posts, please subscribe!                    </div>
+                    <div style="padding-bottom: 20px">
+                        Hey! If you would like to be notified of future cool posts, please enter your details below.                    </div>
                     <form id="sender-subscribe" target="_blank" action="https://app.sender.net/forms/sender_subscription/9820/9232ae2e" method="POST">
                                         
                             <div class="subscription-form-fields" id="subscription-form-fields">
@@ -177,37 +218,54 @@
                                     </div>
     </div>
 </div>                
-    </div>
-
-          {% if site.discus_identifier %}
-            <div id="disqus_thread" class="article-comments"></div>
-            <script src="https://{{ site.discus_identifier }}.disqus.com/embed.js" async defer></script>
-            <noscript>Please enable JavaScript to view the comments.</noscript>
-          {% endif %}
-        </article>
-        {% include footer.html %}
+		  </div>		</div>
+		</div>
       </div>
     </div>
   </main>
-  {% include javascripts.html %}
-    <script>
-    function validateEmail(email) {
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160034068-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-160034068-1');
+  </script>
+
+
+<script src="/cool/assets/vendor-2c224c53eb697c739f9490c38819a72184f09472739fd9e492272ef174090428.js" type="text/javascript"></script>
+
+
+  <script src="/cool/assets/webfonts-96493456d319d1bf419afdf8701552d4d486fee6afd304897d4fd81eb4e0cc0b.js" type="text/javascript"></script>
+
+
+
+  <script src="/cool/assets/scrollappear-e2da8ea567e418637e31266cc5302126eaa79f62a2273739086358b589a89ee6.js" type="text/javascript"></script>
+
+
+<script src="/cool/assets/application-cfde13ac81ddaf4351b2e739603e2baf688d0fcc9aba613fe62bbb1c7b037fb9.js" type="text/javascript"></script>
+
+
+  <script src="/cool/assets/themetoggle-df0d3d73164dc26dffbd630182ae4d0dfa7bee6b694a2b5d565d73595b582bbf.js" type="text/javascript"></script>
+
+  <script>
+  	function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
-  }
-  function myFunction() {
-    var x = document.getElementsByClassName("toggle");
-      var emails = x.item(1).getElementsByClassName("email_type");
-      if (validateEmail(emails.item(0).value)){
-      for (var i = 0; i < x.length; i++) {
-          if (x.item(i).style.display === "none") {
-            x.item(i).style.display = "block";
-        } else {
-            x.item(i).style.display = "none";
-        }
-      }
-  }}
+	}
+	function myFunction() {
+	  var x = document.getElementsByClassName("toggle");
+	  	var emails = x.item(1).getElementsByClassName("email_type");
+	  	if (validateEmail(emails.item(0).value)){
+		  for (var i = 0; i < x.length; i++) {
+		  		if (x.item(i).style.display === "none") {
+				    x.item(i).style.display = "block";
+				} else {
+				    x.item(i).style.display = "none";
+				}
+	  	}
+	}}
 </script>
-
 </body>
 </html>
+
