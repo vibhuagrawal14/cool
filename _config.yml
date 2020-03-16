@@ -3,7 +3,7 @@
 blog_theme: light # Or use dark
 name: coolest stuff i saw this week
 paginate: 25
-url: "vibhuagrawal.com"
+url: "https://vibhuagrawal.com"
 baseurl: "/cool"
 
 
