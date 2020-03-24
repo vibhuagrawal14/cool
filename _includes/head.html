@@ -1,7 +1,13 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  {% if page.slug and page.layout!="post"%}
+  <title>{{ site.name }} - tagged "{{page.slug}}"</title>
+  {% else if page.title %}
+  <title>{{ page.title }}</title>
+  {% else %}
   <title>{{ site.name }}</title>
+  {% endif %}
   <meta name="description" content="{{ page.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
