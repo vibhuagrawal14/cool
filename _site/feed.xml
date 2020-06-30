@@ -7,8 +7,16 @@
     <atom:link href="http://localhost:4000/cool/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>coolest stuff i saw this week #14</title>
+        <description>art, philosophy, lists, etc.</description>
+        <pubDate>Mon, 29 Jun 2020 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/cool/posts/14</link>
+        <guid isPermaLink="true">http://localhost:4000/cool/posts/14</guid>
+      </item>
+    
+      <item>
         <title>coolest stuff i saw this week #13</title>
-        <description>rabbits, islands, license plates, etc.</description>
+        <description>crime, color, writing, etc.</description>
         <pubDate>Mon, 22 Jun 2020 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/cool/posts/13</link>
         <guid isPermaLink="true">http://localhost:4000/cool/posts/13</guid>
@@ -76,14 +84,6 @@
         <pubDate>Mon, 06 Apr 2020 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/cool/posts/5</link>
         <guid isPermaLink="true">http://localhost:4000/cool/posts/5</guid>
-      </item>
-    
-      <item>
-        <title>coolest stuff i saw this week #4</title>
-        <description>mortality rate, social engineering, future, etc.</description>
-        <pubDate>Mon, 30 Mar 2020 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/cool/posts/4</link>
-        <guid isPermaLink="true">http://localhost:4000/cool/posts/4</guid>
       </item>
     
   </channel>
