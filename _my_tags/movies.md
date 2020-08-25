@@ -1,4 +1,0 @@
----
-slug: movies
-name: movies
----

@@ -1,4 +1,0 @@
----
-slug: law
-name: law
----

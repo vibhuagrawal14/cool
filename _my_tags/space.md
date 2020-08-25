@@ -1,4 +1,0 @@
----
-slug: space
-name: space
----

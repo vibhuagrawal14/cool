@@ -1,4 +1,0 @@
----
-slug: literature
-name: literature
----

@@ -1,4 +1,0 @@
----
-slug: sports
-name: sports
----

@@ -1,4 +1,0 @@
----
-slug: biology
-name: biology
----
